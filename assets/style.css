@@ -1,0 +1,19 @@
+:root{--bg:#f5f7fb;--card:#fff;--text:#1f2937;--muted:#6b7280;--accent:#2563eb;--border:#e5e7eb}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+header{background:var(--accent);color:#fff;padding:2rem 1rem;text-align:center}
+header h1{margin:0 0 .25rem;font-size:1.6rem}
+header p{margin:0;opacity:.9}
+main{max-width:860px;margin:0 auto;padding:1.5rem 1rem 3rem}
+h2{font-size:1.15rem;margin:2rem 0 .75rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.75rem}
+.card{display:block;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem;text-align:center;text-decoration:none;color:var(--text);font-weight:600;font-size:1.1rem;transition:transform .1s,box-shadow .1s}
+.card:hover,.card:focus{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.1);border-color:var(--accent)}
+.week{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem;margin-bottom:1rem}
+.week h3{margin:0 0 .25rem;font-size:1.05rem}
+.week .desc{color:var(--muted);margin:0 0 .5rem;font-size:.95rem}
+.week ul{list-style:none;margin:0;padding:0}
+.week li a{display:block;padding:.6rem 0;border-top:1px solid var(--border);color:var(--accent);text-decoration:none;word-break:break-word}
+.week li a:hover{text-decoration:underline}
+.back{display:inline-block;margin-bottom:1rem;color:var(--accent);text-decoration:none}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:1rem}
